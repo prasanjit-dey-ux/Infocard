@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --page-bg: #FFEEDE;
+  --card: #FFB16D;
+  --card-grad-end: #FF9C45;
+  --card-outline: #D08544;
+  --text-primary: #441400;
+  --text-secondary: #474747;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +25,23 @@
   }
 }
 
+@theme {
+  --color-background: var(--page-bg);
+  --color-card: var(--card);
+  --color-card-outline: var(--card-outline);
+  --color-card-grad-end:var(--card-grad-end);
+  
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-text-secondary)
+  --font-mono:var(--font-mono)
+
+}
+
+
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
+
