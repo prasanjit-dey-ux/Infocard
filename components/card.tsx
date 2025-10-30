@@ -16,7 +16,7 @@ export const Card = ({className, children}: CardElementProps) => {
   return (
     <div className={clsx(
       'w-108 h-73 rounded-2xl bg-card p-1 outline-2 outline-[#FFC491]',
-      'max-sm:w-[320px] max-sm:h-[200px] max-sm:p-0.5', // Mobile: smaller, less padding
+      'max-sm:w-80 max-sm:h-56', // Mobile: smaller card
       className
     )}>
         {children}
@@ -27,7 +27,7 @@ export const Card = ({className, children}: CardElementProps) => {
 export const CardLogo = ({className, children}: CardElementProps) => {
     return <div className={clsx(
       'flex justify-center items-center px-2 pt-4',
-      'max-sm:pt-1 max-sm:px-1 max-sm:scale-50 max-sm:-mb-4', // Mobile: much smaller logo
+      'max-sm:pt-2 max-sm:scale-75', 
       className
     )}>
         {children}
@@ -37,7 +37,7 @@ export const CardLogo = ({className, children}: CardElementProps) => {
 export const CardBody = ({className, children}: CardElementProps) => {
     return <div className={clsx(
       'w-full px-4 py-2',
-      'max-sm:px-2 max-sm:py-1', // Mobile: less padding
+      'max-sm:px-3 max-sm:py-1',
       className
     )}>
         {children}
@@ -61,7 +61,6 @@ export const CardContainer = ({className, children, variant}: CardContainerProps
       'relative flex flex-col w-full h-full rounded-[14px] overflow-hidden',
       variant === 'default' && 'bg-linear-to-b from-card from-63% to-[#FF9C45]',
       variant === 'back' && 'bg-cardback',
-      'max-sm:rounded-xl', // Smaller radius on mobile
       className
     )}>
         {children}
