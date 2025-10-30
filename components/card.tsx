@@ -59,6 +59,7 @@ export const CardContact = ({className, children}: CardElementProps) => {
 export const CardContainer = ({className, children, variant}: CardContainerProps) => {
     return <div className={clsx(
       'relative flex flex-col w-full h-full rounded-[14px] overflow-hidden',
+      'max-sm:rounded-[10px]',
       variant === 'default' && 'bg-linear-to-b from-card from-63% to-[#FF9C45]',
       variant === 'back' && 'bg-cardback',
       className
