@@ -27,7 +27,7 @@ export const Card = ({className, children}: CardElementProps) => {
 export const CardLogo = ({className, children}: CardElementProps) => {
     return <div className={clsx(
       'flex justify-center items-center px-2 pt-4',
-      'max-sm:pt-2 max-sm:scale-75', 
+      'max-sm:pt-2', 
       className
     )}>
         {children}
@@ -37,7 +37,7 @@ export const CardLogo = ({className, children}: CardElementProps) => {
 export const CardBody = ({className, children}: CardElementProps) => {
     return <div className={clsx(
       'w-full px-4 py-2',
-      'max-sm:px-3 max-sm:py-1',
+      'max-sm:px-2 max-sm:py-2 max-sm:mt-1',
       className
     )}>
         {children}
