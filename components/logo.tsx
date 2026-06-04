@@ -40,7 +40,7 @@ export const LogoFront = ({className, fill = '#FFA658', style}:SvgProps) => {
 
   return (
 
-<svg  viewBox="0 0 343 169" fill="none" xmlns="http://www.w3.org/2000/svg" 
+<svg  viewBox="0 0 343 169" xmlns="http://www.w3.org/2000/svg" 
 style={style}
 fill={fill}
 className={clsx(
@@ -101,7 +101,7 @@ export const Logo = ({className, fill = '#FFA658', style}: SvgProps) => {
 
 export const LogoBack = ({className, fill = '#FFA658', style}: SvgProps) => {
     return(
-        <svg viewBox="0 0 347 174" fill="none" xmlns="http://www.w3.org/2000/svg" style={style} fill={fill} className={clsx(
+        <svg viewBox="0 0 347 174" xmlns="http://www.w3.org/2000/svg" style={style} fill={fill} className={clsx(
         "w-[347px] h-[174px]",
         "max-sm:w-[260px] max-sm:h-[130px]",
         "pointer-events-none", 
