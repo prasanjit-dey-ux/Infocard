@@ -8,10 +8,21 @@
   --card-outline: #a0642f;
   --cardback: #ED984D;
 
-  
+
   --text-primary: #441400;
   --text-secondary: #474747;
   --font-mono: "IBM Plex Mono", monospace;
+
+  /* V2 Skyblue Theme */
+  --v2-page-bg: #E0F2FE;
+  --v2-card: #7DD3FC;
+  --v2-card-grad-end: #38BDF8;
+  --v2-card-outline: #6bceff;
+  --v2-cardback: #30baff;
+  --v2-text-primary: #0C2D48;
+  --v2-text-secondary: #3B5975;
+  --v2-star: #38BDF8;
+  --v2-dash-outline: #BAE6FD;
 }
 
 @theme inline {
@@ -32,12 +43,20 @@
   --color-background: var(--page-bg);
   --color-card: var(--card);
   --color-card-outline: var(--card-outline);
-  --color-card-grad-end:var(--card-grad-end);
-  --color-cardback:var(--cardback);
+  --color-card-grad-end: var(--card-grad-end);
+  --color-cardback: var(--cardback);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-text-secondary);
-  --font-mono:var(--font-mono)
+  --font-mono: var(--font-mono);
 
+  /* V2 Skyblue Theme */
+  --color-v2-background: var(--v2-page-bg);
+  --color-v2-card: var(--v2-card);
+  --color-v2-card-outline: var(--v2-card-outline);
+  --color-v2-card-grad-end: var(--v2-card-grad-end);
+  --color-v2-cardback: var(--v2-cardback);
+  --color-v2-text-primary: var(--v2-text-primary);
+  --color-v2-text-secondary: var(--v2-text-secondary);
 }
 
 
@@ -45,7 +64,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-
